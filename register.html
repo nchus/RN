@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 20px 30px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #518c8f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-box button:hover {
+      background-color: #60999e;
+    }
+
+    .form-box p {
+      
+      font-size: 0.9em;
+      margin: 5px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Đăng Nhập</h2>
+    <form>
+      <input id="loginUser" placeholder="Username">
+      <input id="loginPass" type="password" placeholder="Mật khẩu">
+      <button>Đăng nhập</button>
+      <p id="loginError"></p>
+    </form>
+  </div>
+</body>
+</html>
