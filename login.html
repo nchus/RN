@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Đăng ký</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Đăng Nhập</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,900;1,900&family=Story+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Raleway:ital,wght@0,900;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Story+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,22 +19,20 @@
     }
 
     h2 {
-      color: #473d24;
-  font-family: "Edu NSW ACT Cursive", cursive;
+      color: #333;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
     }
 
     .form-box {
-      background: #ece6d9;
+      background: #fff;
       padding: 20px 30px;
       margin: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 300px;
-      
-      
     }
 
     .form-box input {
@@ -42,14 +41,13 @@
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 4px;
-      
     }
 
     .form-box button {
       width: 100%;
       padding: 10px;
-      background-color: #b3956f;
-      color: rgb(247, 236, 212);
+      background-color: #518c8f;
+      color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -57,7 +55,7 @@
     }
 
     .form-box button:hover {
-      background-color: #625539;
+      background-color: #60999e;
     }
 
     .form-box p {
@@ -65,7 +63,7 @@
       font-size: 0.9em;
       margin: 5px 0 0;
     }
-    img{
+        img{
   position: absolute;
   width: 100%;
   opacity: 0.5;
@@ -73,29 +71,23 @@
   height: 150%;
   }
   button{
-      font-family: "Pacifico", cursive;
-  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
   font-style: normal;
   }
-
   </style>
 </head>
 <body>
-<img src="https://i.pinimg.com/736x/9c/fb/30/9cfb30e81c33dfc6eda561210cde0404.jpg" alt="">
+  <img src="https://i.pinimg.com/736x/1c/75/5f/1c755f7f6d50086a20f6cbc2fa498c65.jpg" alt="">
   <div class="form-box">
-    <h2>Đăng Ký</h2>
-    <form>
-      <input id="regUser" placeholder="Username">
-      <input id="regEmail" placeholder="Email">
-      <input id="regPass" type="password" placeholder="Mật khẩu">
-      <input id="regConfirm" type="password" placeholder="Xác nhận mật khẩu">
-      <button>Đăng ký</button>
-      <p id="regError"></p>
+    <h2>Đăng Nhập</h2>
+    <form action="type.html">
+      <input id="loginUser" placeholder="Username">
+      <input id="loginPass" type="password" placeholder="Mật khẩu">
+      <button>Đăng nhập</button>
+      <p id="loginError"></p>
     </form>
   </div>
-
-
-  
-
 </body>
 </html>
