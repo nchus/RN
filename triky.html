@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tri Kỷ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+        h2 {
+   
+      color: #5c797b;
+      text-align: center;
+     }
+
+
+    .story-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .story-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      width: 300px;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .story-card:hover {
+      transform: scale(1.03);
+    }
+
+    .story-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .story-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .story-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .story-description {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .story-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .story-image {
+  width: 100%;
+  height: 180px; /* Chiều cao cố định */
+  object-fit: cover; /* Cắt ảnh để vừa khung mà không méo */
+  display: block;
+}
+    /* Navbar cố định */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #166e6e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 1000;
+    }
+
+    .navbar-left, .navbar-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .navbar a:hover,
+    .navbar a:focus,
+    .navbar a:target {
+      background-color:  #78c2cc;
+    }
+
+
+  </style>
+</head>
+<body>
+ <div class="navbar">
+    <div class="navbar-left">
+      <a href="type.html">Trang chủ</a>
+      <a href="NEWS.html">News</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+    <div class="navbar-right">
+      <a href="login.html">Đăng nhập</a>
+      <a href="register.html">Đăng ký</a>
+    </div>
+
+  </div>
+
+  <h2>Tri kỷ&#128395;</h2>
+  <div class="story-grid">
+
+    <a href="https://example.com/truyen/cau-be-ben-song" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/1d/0d/21/1d0d21990ad41f0df5b54169f152d213.jpg" alt="Truyện 1" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Phía dưới cây sồi</div>
+        <div class="story-description">
+          Một bản tình ca nhẹ nhàng về mối duyên tri kỷ kéo dài qua năm tháng. Giữa tán lá rợp bóng của cây sồi già, hai tâm hồn đồng điệu đã tìm thấy nhau — không phải trong những khoảnh khắc rực rỡ, mà trong sự lặng lẽ, thấu hiểu và gắn bó không lời. Đây là nơi họ hẹn nhau mỗi mùa thay lá, nơi tình yêu không cần ồn ào mà vẫn bền vững như rễ cây ăn sâu vào lòng đất.
+        </div>
+      </div>
+    </a>
+
+    <a href="https://example.com/truyen/nang-va-gio" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/736x/40/2b/6b/402b6bce5bf1fd74c4d6139cfcc48ad4.jpg" alt="Truyện 2" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Ánh nắng của tôi</div>
+        <div class="story-description">
+          Những năm tháng học trò không chỉ có tiếng cười và ánh mắt dịu dàng, mà còn có cả những lần giận dỗi vụng về. Khi hai người tri kỷ không nói chuyện với nhau, sân trường bỗng trở nên rộng hơn, nắng cũng như nhạt đi. Nhưng chính những khoảng lặng ấy lại khiến họ nhận ra: không phải vì giận mà xa nhau, mà vì quá quan tâm nên mới tổn thương. Và rồi, một ánh nhìn, một lời xin lỗi nhỏ, cũng đủ để ánh nắng lại trở về.
+        </div>
+      </div>
+    </a>
+
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/736x/3b/75/1b/3b751bae3d064e85b376d81dbd0f9fa2.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Đông qua xuân về</div>
+        <div class="story-description">
+         Một bản giao hưởng cảm xúc về tình tri kỷ tuổi học trò — nơi tình cảm không cần lời tỏ tình, chỉ cần sự hiện diện đúng lúc. Trong những ngày đông lạnh giá, hai học sinh lặng lẽ bên nhau, chia sẻ từng ánh nhìn, từng trang vở, từng lần giận dỗi vụng về. Khi xuân về, hoa nở cũng là lúc họ nhận ra rằng sự gắn bó ấy không phải là tình yêu thoáng qua, mà là một mối liên kết sâu sắc: tri kỷ — người hiểu mình ngay cả khi mình chưa nói. Một câu chuyện nhẹ nhàng, nhưng đọng lại như hơi ấm đầu mùa xuân.
+        </div>
+      </div>
+    </a>
+
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/53/f9/34/53f93477fde9bcefcd71aec4d542a8ea.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Chỉ cần bên người</div>
+        <div class="story-description">
+          Lời thì thầm của hai tâm hồn trưởng thành đã chọn nhau không vì lý do, mà vì cảm giác không ai thay thế được. Họ không cần nói nhiều, chỉ cần ánh mắt chạm nhau, một cái ôm đủ tình cảm là đủ hiểu, đủ để yêu sâu hơn. Tình tri kỷ ấy không còn là sự đồng hành đơn thuần, mà là sự gắn bó đầy thắm thiết — như hơi thở, như nhịp sống, như một phần không thể thiếu trong nhau.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/51/7d/1a/517d1ac5f7960c5c56c8f9ed2b5cef01.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Nơi gác xếp cũ</div>
+        <div class="story-description">
+        Một câu chuyện mang màu sắc hoài niệm về tình tri kỷ trưởng thành — nơi hai con người từng là bạn thân, từng chia sẻ những giấc mơ tuổi trẻ, nay gặp lại giữa căn gác phủ bụi thời gian. Trong không gian nhỏ bé ấy, từng món đồ cũ, từng mảnh ký ức lại sống dậy, nhắc họ về một thứ tình cảm không tên nhưng chưa từng phai. Nơi gác xếp cũ không kể về tình yêu rực rỡ, mà về sự gắn bó âm thầm, sâu sắc — như ánh sáng len qua khe cửa, như hơi ấm còn sót lại trong những ngày đã qua.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/2f/0a/0d/2f0a0d54e9fc1ea60dbb478a22714563.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Đủ yêu, đủ hiểu</div>
+        <div class="story-description">
+        Một câu chuyện về tình tri kỷ trưởng thành — nơi tình cảm không cần phải phô trương, chỉ cần đủ sâu để thấu hiểu và đủ gần để ở lại. Giữa những ngày bận rộn, hai con người chọn cách lặng lẽ bên nhau, chia sẻ từng khoảng lặng, từng niềm vui nhỏ, từng tổn thương không gọi tên. Không phải vì họ hoàn hảo, mà vì họ đủ yêu để bao dung, đủ hiểu để không cần giải thích. Đây là câu chuyện về một mối quan hệ không cần định nghĩa, nhưng luôn là nơi để trở về.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/736x/81/21/26/812126ed6e95365061a6a774659b26d4.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Hành trình của Lá</div>
+        <div class="story-description">
+      Một câu chuyện mang màu sắc tri kỷ, kể về hành trình của một chiếc lá nhỏ rời khỏi cành cây thân thuộc để bắt đầu chuyến đi qua những mùa gió, dòng suối và miền đất lạ. Trên đường đi, Lá gặp một chiếc Lá khác — không giống mình, nhưng lại đồng điệu đến lạ thường. Giữa những đổi thay của thiên nhiên, họ không níu giữ nhau, chỉ cùng bay một đoạn đường, đủ để hiểu, đủ để nhớ. Đây là câu chuyện về sự gắn bó không cần ràng buộc, về một thứ tình cảm nhẹ như gió nhưng sâu như đất — một hành trình của tri kỷ, không cần cùng đích, chỉ cần cùng đi.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/736x/7c/46/02/7c46022b5a1e68c8cffec422ba3808bb.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Đoá lan hồng thắm </div>
+        <div class="story-description">
+       Một câu chuyện hư cấu mang sắc hương dịu dàng của tình tri kỷ trưởng thành — nơi hai con người tìm thấy nhau không phải giữa những biến cố lớn lao, mà trong sự tinh tế của từng khoảnh khắc đời thường. Giống như đóa lan hồng nở chậm giữa vườn khuya, mối quan hệ ấy không vội vàng, không phô trương, nhưng thắm thiết và bền bỉ. Họ không cần nói nhiều, chỉ cần hiện diện bên nhau, đủ để lòng bình yên và trái tim được sưởi ấm. Đây là câu chuyện về một thứ tình cảm đẹp như hoa lan: thanh tao, sâu sắc, và không dễ phai.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/a1/ca/48/a1ca4893a652f4803d1471d5c9c9b6f5.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Chạy về nơi anh</div>
+        <div class="story-description">
+         Một câu chuyện hư cấu đầy cảm xúc về tình tri kỷ trưởng thành, nơi người phụ nữ sau những chênh vênh của cuộc sống đã tìm thấy nơi bình yên nhất — là anh. Không phải vì anh hoàn hảo, mà vì anh là người duy nhất khiến cô muốn quay về, dù có đi xa đến đâu. Mỗi lần mỏi mệt, mỗi lần tổn thương, cô chỉ muốn chạy về nơi anh — nơi có ánh mắt thấu hiểu, bàn tay dịu dàng, và trái tim luôn rộng mở. Đây là câu chuyện về một tình cảm không cần gọi tên, chỉ cần đủ sâu để là nhà.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/57/a2/f4/57a2f4f3fcccdfaf94e56a5463eeee17.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Cùng đón ánh dương</div>
+        <div class="story-description">
+          Một câu chuyện hư cấu đầy hy vọng về tình tri kỷ trưởng thành — nơi hai con người từng đi qua những ngày u tối, những lần gục ngã, nhưng chưa từng buông tay nhau. Họ không phải là người cứu rỗi nhau, mà là người cùng đứng dậy, cùng bước tiếp, cùng chờ ánh sáng đầu ngày. Tình cảm ấy không rực rỡ như nắng trưa, mà ấm áp như tia sáng đầu tiên sau đêm dài — đủ để sưởi ấm, đủ để tin rằng ngày mai sẽ tốt hơn. Đây là câu chuyện về sự đồng hành sâu sắc, nơi tri kỷ là người cùng ta đón ánh dương, dù đã từng lạc trong bóng tối.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/736x/a4/c7/59/a4c7597d72c9e34446f18b0cba833138.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Nụ cười nơi em</div>
+        <div class="story-description">
+         Một câu chuyện hư cấu đầy cảm xúc về tình tri kỷ trưởng thành — nơi nụ cười của người ấy không chỉ là ánh sáng, mà là điểm tựa giữa những ngày chênh vênh. Anh không yêu em vì em luôn vui vẻ, mà vì mỗi lần em cười, anh thấy cả thế giới dịu lại. Giữa những bộn bề cuộc sống, chính nụ cười ấy đã giữ anh ở lại, khiến anh tin rằng dù có đi qua bao nhiêu giông gió, chỉ cần nhìn thấy em, mọi thứ sẽ ổn. Đây là câu chuyện về một mối gắn bó sâu sắc, nơi tri kỷ không chỉ là người hiểu ta, mà là người khiến ta muốn sống dịu dàng hơn mỗi ngày.
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://example.com/truyen/hanh-trinh-cua-la" class="story-card" target="_blank">
+      <img src="https://i.pinimg.com/1200x/bb/ff/17/bbff17cf2b312d2ef905080b63f8f7c3.jpg" alt="Truyện 3" class="story-image">
+      <div class="story-content">
+        <div class="story-title">Điểm tựa vựng chắc </div>
+        <div class="story-description">
+          Một câu chuyện hư cấu sâu lắng về tình tri kỷ trưởng thành — nơi hai con người không cần phải hoàn hảo, chỉ cần đủ tin tưởng để tựa vào nhau mỗi khi cuộc sống chông chênh. Họ không phải là người giải quyết mọi vấn đề cho nhau, nhưng luôn là người đầu tiên lắng nghe, thấu hiểu và ở lại. Giữa những biến động, mỏi mệt và cả những lần tưởng chừng gục ngã, sự hiện diện của nhau chính là điểm tựa — vững chắc, bền bỉ, và không bao giờ lung lay. Đây là câu chuyện về một mối gắn bó không cần ràng buộc, nhưng đủ sâu để trở thành nơi an yên nhất đời người.
+        </div>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>

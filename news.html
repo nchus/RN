@@ -75,63 +75,59 @@
       font-size: 14px;
       border-bottom-right-radius: 8px;
     }
-    .box {
-      margin-top: 50px;
-      background-color: #c6ecee;
-      padding: 20px;
-      text-align: center;
-      width: 100%;
-    }
-
-    /* Style the top navigation bar */
-    .topnav {
+    
+    /* Navbar cố định */
+    .navbar {
       position: fixed;
-      width: 100%;
-      /* overflow: hidden; */
+      top: 0;
+      left: 0;
+      right: 0;
       background-color: #166e6e;
-      top: 0px;
-    }
-    a{
-      .left{
-        text-align: left;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 1000;
     }
 
-    /* Style the topnav links */
-    .topnav a {
+    .navbar-left, .navbar-right {
+      display: flex;
+      gap: 20px;
+    }
 
-      float: left;
-      display: block;
-      color: #d5e4e5;
-      text-align: center;
-      padding: 14px 16px;
+    .navbar a {
+      color: white;
       text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
     }
 
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #78c2cc;
-      color: rgb(29, 104, 110);
+    .navbar a:hover,
+    .navbar a:focus,
+    .navbar a:target {
+      background-color:  #78c2cc;
     }
-    .topnav-right {
-  float: right;
-}
+
+
+
+
 
   </style>
 </head>
 <body>
   
-<div class="topnav">
-  <a href="type.html">Trang chủ</a>
-  <a href="news.html">News</a>
-  <a href="#">Liên hệ</a>
-
-  <!-- Nhóm bên phải -->
-  <div class="topnav-right">
-    <a href="login.html">Đăng Nhập</a>
-    <a href="register.html">Đăng ký</a>
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="type.html">Trang chủ</a>
+      <a href="NEWS.html">News</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+    <div class="navbar-right">
+      <a href="login.html">Đăng nhập</a>
+      <a href="register.html">Đăng ký</a>
+    </div>
   </div>
-</div>
+
 
 
 
@@ -189,7 +185,7 @@
       </div>
     </div>
         <div class="story-box">
-            <div class="label-new">HOT</div>
+            <div class="label-new">NEW</div>
       <img src="https://i.pinimg.com/736x/90/6d/17/906d178040ad81c303dec3816fa3748d.jpg" alt="Truyện 3" class="story-image">
       <div class="story-content">
         <div class="story-title">Mến gửi bạn cùng bàn</div>
